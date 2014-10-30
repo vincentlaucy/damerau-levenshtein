@@ -109,7 +109,7 @@ function DamerauLevenshtein(prices, damerau) {
     }).bind(this, source1, source2));
 
     _substitute = overrideIfFx(substitute, (function(source1, source2, a, d) {
-      if (shift && (source1.indexOf(a) > -1) && (source2.indexOf(a) >
+      if (shift && (source1.indexOf(d) > -1) && (source2.indexOf(d) >
           -1)) return shift;
       return substitute(a, d, source1, source2);
     }).bind(this, source1, source2));
